@@ -1,6 +1,6 @@
 from MobileVLM.scripts.inference import inference_once
 
-model_path = "mtgv/MobileVLM_V2-3B" # MobileVLM V2
+model_path = "mtgv/MobileVLM-1.7B"
 image_file = "MobileVLM/assets/samples/demo.jpg"
 prompt_str = "Who is the author of this book?\nAnswer the question using a single word or phrase."
 
@@ -17,4 +17,5 @@ args = type('Args', (), {
     "load_4bit": False,
 })()
 
-inference_once(args)
+output = inference_once(args)
+print(f"LLM: {output}")
