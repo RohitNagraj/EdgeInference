@@ -2,4 +2,7 @@ MobileVLM-1.7B
 clip-vit-large-patch14-336
 llama.cpp
 data
-playground.ipynb
+playground*.ipynb
+android-ndk
+.idea
+__pycache__

@@ -1,0 +1,8 @@
+Model,Sparsity,Quantization,Prefill,Decode
+Base,0+ACU-,FP32,964 tps,104 tps
+Fine+AC0-tuned,0+ACU-,FP32,972 tps,108 tps
+Fine+AC0-tuned,40+ACU- fine+AC0-grained,FP32,951 tps,111 tps
+Fine+AC0-tuned,20+ACU- vector+AC0-level,FP32,998 tps,127 tps
+Fine+AC0-tuned,40+ACU- fine+AC0-grained,INT4,1085 tps,204 tps
+Fine+AC0-tuned on Snapdragon 8Gen2,0+ACU-,INT4,29 tps,22 tps
+Fine+AC0-tuned on Snapdragon 8Gen2,0+ACU-,FP32,13 tps,0.2 tps
